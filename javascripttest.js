@@ -52,6 +52,26 @@ function mySon() {
     console.log(mySName);
 }
 
+// Spread Operators
+const array1 = [1,2,3,4]
+console.log (array1);
+const array2 = [...array1, 6,7]
+console.log(array2);
+const guy = {
+    name: 'Max'
+};
+const newGuy = {
+    ...guy, 
+    age: 28
+}
+console.log(newGuy);
+
+// Rest Operators
+const filter = (...args) => {
+    return args.filter(el => el === 1);
+}
+console.log(filter(1,2,3));
+
 mySon();
 myDaughter();
 printMyName('Henry');
