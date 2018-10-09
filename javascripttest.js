@@ -2,6 +2,8 @@
 
 var person = require ('./import2');
 
+var cat = require('./import3');
+
 var myName = "Jared";
 
 console.log(myName);
@@ -55,3 +57,4 @@ myDaughter();
 printMyName('Henry');
 printMyOtherName('Mark');
 printMyOtherName(person);
+printMyOtherName(cat);
