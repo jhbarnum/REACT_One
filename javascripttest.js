@@ -76,15 +76,30 @@ console.log(filter(1,2,3));
 console.log(a + ' ' + b)
 console.log(b)
 
+const numbers = [1, 2, 3];
+[num1, , num3] = numbers;
+console.log(num1, num3);
+
 // Object Destructuring
+
 // {name} = {name:'Jack',age:24}
 // console.log(name)
 // console.log(age)
 
-const numbers = [1,2,3];
-[num1, , num3] = numbers;
-console.log(num1, num3);
-console.log(num1, num3);
+// Reference and Primitive Types
+//primitive
+const number = 1;
+const num2 = number;
+// ref (arrays and objects)
+const helloperson = {
+    name: 'Tony'
+};
+const secondhelloPerson = { // copy helloperson{} in an imutable way
+    ...helloperson
+}
+helloperson.name = 'Lidia';
+
+console.log('Second Person ' + secondhelloPerson.name);
 
 mySon();
 myDaughter();
