@@ -71,6 +71,20 @@ const filter = (...args) => {
     return args.filter(el => el === 1);
 }
 console.log(filter(1,2,3));
+// Array Destructuring
+[a,b] = ['Hello', 'Georgie']
+console.log(a + ' ' + b)
+console.log(b)
+
+// Object Destructuring
+// {name} = {name:'Jack',age:24}
+// console.log(name)
+// console.log(age)
+
+const numbers = [1,2,3];
+[num1, , num3] = numbers;
+console.log(num1, num3);
+console.log(num1, num3);
 
 mySon();
 myDaughter();
