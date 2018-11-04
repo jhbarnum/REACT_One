@@ -101,9 +101,31 @@ helloperson.name = 'Lidia';
 
 console.log('Second Person ' + secondhelloPerson.name);
 
+
+const car = {
+    name: 'Toyota'
+};
+
+const secondCar =  
+ { 
+     ...car
+ }
+const thirdCar = car;
+car.name = 'Ford';
+
+//Array Functions
+const numbersArray = [1, 2, 3, 4, 5];
+
+const doubleNumArray = numbersArray.map ((num) => {
+    return num * 2;
+})
+
 mySon();
 myDaughter();
 printMyName('Henry');
 printMyOtherName('Mark');
 printMyOtherName(person);
-printMyOtherName(cat);
+printMyOtherName(cat); 
+console.log(secondCar, car, thirdCar);
+console.log(doubleNumArray);
+console.log(numbersArray);
